@@ -1,1 +1,1055 @@
-<h1>Welcome</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+          rel="stylesheet"/>
+
+    <script>
+        /* ============================================================
+           ✏️  CONFIGURE YOUR APP HERE — change these values only
+           ============================================================ */
+        const APP = {
+          name:          "NumSys",   // App name
+          version:       "1.0.0",                           // App version
+          effectiveDate: "Mar 1, 2026",                 // Policy date
+          devName:       "Jobayer",                         // Developer / company name
+          email:         "kasembhai1980@gmail.com",             // Contact email
+          website:       "https://brackup757.github.io/numsys-privacy-policy/",     // Policy URL
+          playStore:     "NumSys Converter",   // Play Store listing name
+          responseTime:  "30 business days",                // Support response time
+          copyright:     "2026",                            // Copyright year
+        };
+        /* ============================================================ */
+    </script>
+
+    <style>
+        /* ── Reset & base ─────────────────────────────────────────── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+          --ink-900:  #0c1220;
+          --ink-800:  #1a2540;
+          --ink-700:  #263354;
+          --ink-500:  #4a5980;
+          --ink-300:  #8896b3;
+          --ink-100:  #e8ecf5;
+          --ink-50:   #f4f6fc;
+
+          --gold:     #c9a84c;
+          --gold-lt:  #f5e9c8;
+          --gold-glow:#f5e9c840;
+
+          --teal:     #0e8c7a;
+          --teal-lt:  #d0f0eb;
+
+          --red:      #c0392b;
+
+          --serif:    'Playfair Display', Georgia, serif;
+          --sans:     'DM Sans', sans-serif;
+          --mono:     'DM Mono', monospace;
+
+          --radius:   10px;
+          --shadow-sm: 0 2px 8px rgba(12,18,32,.08);
+          --shadow-md: 0 6px 24px rgba(12,18,32,.13);
+          --shadow-lg: 0 16px 48px rgba(12,18,32,.18);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+          font-family: var(--sans);
+          background: #f0f2f8;
+          color: var(--ink-800);
+          line-height: 1.7;
+          min-height: 100vh;
+        }
+
+        /* ── Page wrapper ──────────────────────────────────────────── */
+        .page {
+          max-width: 860px;
+          margin: 0 auto;
+          background: #fff;
+          box-shadow: var(--shadow-lg);
+        }
+
+        /* ── Hero ──────────────────────────────────────────────────── */
+        .hero {
+          background: var(--ink-900);
+          padding: 64px 48px 52px;
+          position: relative;
+          overflow: hidden;
+        }
+        .hero::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(ellipse 60% 50% at 80% 20%, rgba(201,168,76,.14) 0%, transparent 60%),
+            radial-gradient(ellipse 40% 60% at 15% 80%, rgba(14,140,122,.10) 0%, transparent 55%);
+          pointer-events: none;
+        }
+        .hero-eyebrow {
+          font-family: var(--mono);
+          font-size: .72rem;
+          letter-spacing: .18em;
+          text-transform: uppercase;
+          color: var(--gold);
+          margin-bottom: 14px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .hero-eyebrow::before {
+          content: '';
+          display: inline-block;
+          width: 32px;
+          height: 1px;
+          background: var(--gold);
+          opacity: .7;
+        }
+        .hero-title {
+          font-family: var(--serif);
+          font-size: clamp(2.2rem, 5vw, 3.4rem);
+          font-weight: 900;
+          color: #fff;
+          line-height: 1.1;
+          letter-spacing: -.02em;
+          margin-bottom: 12px;
+        }
+        .hero-app {
+          font-size: 1.05rem;
+          color: rgba(255,255,255,.65);
+          margin-bottom: 24px;
+        }
+        .hero-meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 8px;
+        }
+        .badge {
+          font-family: var(--mono);
+          font-size: .72rem;
+          padding: 4px 12px;
+          border-radius: 100px;
+          font-weight: 500;
+          letter-spacing: .04em;
+        }
+        .badge-gold {
+          background: var(--gold-glow);
+          border: 1px solid rgba(201,168,76,.4);
+          color: var(--gold);
+        }
+        .badge-teal {
+          background: rgba(14,140,122,.15);
+          border: 1px solid rgba(14,140,122,.4);
+          color: #1ab5a0;
+        }
+        .badge-ghost {
+          background: rgba(255,255,255,.06);
+          border: 1px solid rgba(255,255,255,.14);
+          color: rgba(255,255,255,.55);
+        }
+
+        /* ── Commitment banner ─────────────────────────────────────── */
+        .commitment {
+          background: linear-gradient(135deg, #0b3d35 0%, #0d4a40 100%);
+          padding: 20px 48px;
+          display: flex;
+          align-items: flex-start;
+          gap: 16px;
+          border-left: 4px solid var(--teal);
+        }
+        .commitment-icon { font-size: 1.5rem; flex-shrink: 0; padding-top: 2px; }
+        .commitment-text strong {
+          display: block;
+          color: #3dd9c4;
+          font-size: .85rem;
+          font-weight: 600;
+          letter-spacing: .04em;
+          text-transform: uppercase;
+          margin-bottom: 4px;
+        }
+        .commitment-text p {
+          color: rgba(255,255,255,.75);
+          font-size: .875rem;
+          line-height: 1.65;
+        }
+
+        /* ── Quick ref table ───────────────────────────────────────── */
+        .quick-ref {
+          border: 1.5px solid var(--ink-100);
+          border-radius: var(--radius);
+          overflow: hidden;
+          font-size: .83rem;
+        }
+        .quick-ref-row {
+          display: grid;
+          grid-template-columns: 160px 1fr;
+          border-bottom: 1px solid var(--ink-100);
+          transition: background .15s;
+        }
+        .quick-ref-row:last-child { border-bottom: none; }
+        .quick-ref-row:nth-child(even) { background: var(--ink-50); }
+        .quick-ref-row:hover { background: var(--gold-lt); }
+        .quick-ref-label {
+          padding: 10px 14px;
+          font-weight: 600;
+          color: var(--ink-800);
+          border-right: 1px solid var(--ink-100);
+          background: inherit;
+        }
+        .quick-ref-value {
+          padding: 10px 16px;
+          color: var(--ink-500);
+        }
+        .tag-none {
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          background: #eefbf7;
+          color: var(--teal);
+          font-weight: 600;
+          font-size: .75rem;
+          padding: 1px 8px;
+          border-radius: 4px;
+          border: 1px solid rgba(14,140,122,.2);
+        }
+        .tag-none::before { content: '✓'; }
+
+        /* ── Body layout ───────────────────────────────────────────── */
+        .body-wrap {
+          padding: 0 48px 64px;
+        }
+
+        /* ── Section heading ───────────────────────────────────────── */
+        .section-heading {
+          font-family: var(--serif);
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: var(--ink-900);
+          margin: 44px 0 6px;
+          padding-bottom: 8px;
+          border-bottom: 2px solid var(--ink-100);
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .section-heading::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 48px;
+          height: 2px;
+          background: var(--gold);
+        }
+        .section-num {
+          font-family: var(--mono);
+          font-size: .75rem;
+          color: var(--gold);
+          background: var(--gold-lt);
+          border: 1px solid rgba(201,168,76,.35);
+          padding: 2px 8px;
+          border-radius: 4px;
+          flex-shrink: 0;
+          letter-spacing: .04em;
+        }
+
+        /* ── Sub-heading ────────────────────────────────────────────── */
+        .sub-heading {
+          font-size: .9rem;
+          font-weight: 600;
+          color: var(--ink-700);
+          margin: 22px 0 6px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .sub-heading::before {
+          content: '';
+          width: 3px;
+          height: 14px;
+          background: var(--teal);
+          border-radius: 2px;
+          display: inline-block;
+        }
+
+        /* ── Body text ─────────────────────────────────────────────── */
+        .body-text {
+          font-size: .9rem;
+          color: var(--ink-500);
+          line-height: 1.75;
+          margin: 8px 0;
+        }
+
+        /* ── Bullet & check lists ──────────────────────────────────── */
+        .check-list, .bullet-list {
+          list-style: none;
+          margin: 8px 0 8px 4px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+        .check-list li, .bullet-list li {
+          font-size: .875rem;
+          color: var(--ink-500);
+          line-height: 1.6;
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+        }
+        .check-list li::before {
+          content: '✓';
+          color: var(--teal);
+          font-weight: 700;
+          font-size: .85rem;
+          flex-shrink: 0;
+          margin-top: 2px;
+        }
+        .bullet-list li::before {
+          content: '•';
+          color: var(--gold);
+          font-weight: 900;
+          font-size: 1rem;
+          flex-shrink: 0;
+          line-height: 1.5;
+        }
+
+        /* ── Highlight callout ─────────────────────────────────────── */
+        .callout {
+          border-radius: var(--radius);
+          padding: 18px 20px;
+          margin: 20px 0;
+          display: flex;
+          gap: 14px;
+          align-items: flex-start;
+        }
+        .callout-blue {
+          background: linear-gradient(135deg, #eef3ff 0%, #e8edfd 100%);
+          border: 1px solid #c5d1f7;
+          border-left: 4px solid #3b5bdb;
+        }
+        .callout-green {
+          background: linear-gradient(135deg, #eefbf6 0%, #e5f8f2 100%);
+          border: 1px solid #b8edd9;
+          border-left: 4px solid var(--teal);
+        }
+        .callout-emoji { font-size: 1.4rem; flex-shrink: 0; }
+        .callout-content strong {
+          display: block;
+          font-size: .875rem;
+          font-weight: 700;
+          color: var(--ink-800);
+          margin-bottom: 5px;
+        }
+        .callout-content p {
+          font-size: .855rem;
+          color: var(--ink-500);
+          line-height: 1.7;
+        }
+
+        /* ── Permissions table ─────────────────────────────────────── */
+        .perm-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: .82rem;
+          border: 1px solid var(--ink-100);
+          border-radius: var(--radius);
+          overflow: hidden;
+          margin: 12px 0;
+        }
+        .perm-table thead tr {
+          background: var(--ink-900);
+          color: #fff;
+        }
+        .perm-table th {
+          padding: 10px 14px;
+          text-align: left;
+          font-weight: 600;
+          font-family: var(--mono);
+          font-size: .74rem;
+          letter-spacing: .05em;
+          text-transform: uppercase;
+        }
+        .perm-table td {
+          padding: 9px 14px;
+          border-bottom: 1px solid var(--ink-100);
+          color: var(--ink-500);
+          vertical-align: middle;
+        }
+        .perm-table tbody tr:last-child td { border-bottom: none; }
+        .perm-table tbody tr:nth-child(even) { background: var(--ink-50); }
+        .perm-table tbody tr:hover { background: var(--gold-lt); transition: background .15s; }
+        .perm-name {
+          font-family: var(--mono);
+          font-size: .78rem;
+          font-weight: 500;
+          color: var(--ink-700);
+        }
+        .perm-no {
+          font-weight: 700;
+          color: var(--teal);
+          font-size: .8rem;
+        }
+
+        /* ── Contact box ───────────────────────────────────────────── */
+        .contact-box {
+          background: var(--ink-50);
+          border: 1.5px solid var(--ink-100);
+          border-radius: var(--radius);
+          padding: 22px 24px;
+          margin: 14px 0;
+        }
+        .contact-box h4 {
+          font-family: var(--serif);
+          font-size: 1rem;
+          font-weight: 700;
+          color: var(--ink-800);
+          margin-bottom: 14px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid var(--ink-100);
+        }
+        .contact-row {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 6px 0;
+          font-size: .87rem;
+          color: var(--ink-500);
+          border-bottom: 1px dashed var(--ink-100);
+        }
+        .contact-row:last-child { border-bottom: none; }
+        .contact-icon { font-size: 1.1rem; width: 26px; text-align: center; flex-shrink: 0; }
+        .contact-label {
+          font-weight: 600;
+          color: var(--ink-700);
+          min-width: 110px;
+          font-size: .8rem;
+          font-family: var(--mono);
+        }
+        .contact-val a { color: var(--ink-800); text-decoration: none; font-weight: 500; }
+        .contact-val a:hover { color: var(--teal); text-decoration: underline; }
+
+        /* ── Footer ────────────────────────────────────────────────── */
+        .footer {
+          background: var(--ink-900);
+          padding: 28px 48px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+        }
+        .footer-copy {
+          font-size: .8rem;
+          color: rgba(255,255,255,.4);
+          font-family: var(--mono);
+        }
+        .footer-tags {
+          display: flex;
+          gap: 6px;
+          flex-wrap: wrap;
+        }
+        .footer-tag {
+          font-size: .7rem;
+          padding: 3px 9px;
+          border-radius: 4px;
+          border: 1px solid rgba(255,255,255,.12);
+          color: rgba(255,255,255,.45);
+          font-family: var(--mono);
+          letter-spacing: .04em;
+        }
+
+        /* ── ToC sidebar strip ─────────────────────────────────────── */
+        .toc-strip {
+          background: var(--ink-50);
+          border-bottom: 2px solid var(--ink-100);
+          padding: 14px 48px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px 0;
+          align-items: center;
+        }
+        .toc-label {
+          font-family: var(--mono);
+          font-size: .7rem;
+          color: var(--ink-300);
+          text-transform: uppercase;
+          letter-spacing: .1em;
+          margin-right: 10px;
+          flex-shrink: 0;
+        }
+        .toc-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+        .toc-link {
+          font-size: .72rem;
+          color: var(--ink-500);
+          text-decoration: none;
+          padding: 2px 8px;
+          border-radius: 4px;
+          transition: all .15s;
+          font-family: var(--mono);
+          border: 1px solid transparent;
+        }
+        .toc-link:hover {
+          background: var(--gold-lt);
+          color: var(--ink-800);
+          border-color: rgba(201,168,76,.3);
+        }
+
+        /* ── Responsive ────────────────────────────────────────────── */
+        @media (max-width: 620px) {
+          .hero, .commitment, .body-wrap, .footer, .toc-strip {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          .hero { padding-top: 40px; padding-bottom: 36px; }
+          .hero-title { font-size: 2rem; }
+          .quick-ref-row { grid-template-columns: 130px 1fr; }
+          .perm-table th:last-child,
+          .perm-table td:last-child { display: none; }
+          .section-heading { font-size: 1.1rem; }
+          .footer { flex-direction: column; align-items: flex-start; }
+        }
+
+        /* ── Scroll-in animation ───────────────────────────────────── */
+        .fade-in {
+          opacity: 0;
+          transform: translateY(14px);
+          transition: opacity .55s ease, transform .55s ease;
+        }
+        .fade-in.visible {
+          opacity: 1;
+          transform: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page" id="top">
+
+    <!-- ── Hero ───────────────────────────────────────────────── -->
+    <header class="hero">
+        <div class="hero-eyebrow">Privacy Policy</div>
+        <h1 class="hero-title" id="hero-title"><!-- filled by JS --></h1>
+        <p class="hero-app" id="hero-app"><!-- filled by JS --></p>
+        <div class="hero-meta" id="hero-meta"><!-- filled by JS --></div>
+    </header>
+
+    <!-- ── Commitment banner ──────────────────────────────────── -->
+    <div class="commitment">
+        <span class="commitment-icon">🛡️</span>
+        <div class="commitment-text">
+            <strong>Our Core Commitment</strong>
+            <p id="commitment-body"><!-- filled by JS --></p>
+        </div>
+    </div>
+
+    <!-- ── Table of contents ──────────────────────────────────── -->
+    <nav class="toc-strip" aria-label="Table of contents">
+        <span class="toc-label">Sections</span>
+        <div class="toc-links">
+            <a class="toc-link" href="#s1">1. Introduction</a>
+            <a class="toc-link" href="#s2">2. No Collection</a>
+            <a class="toc-link" href="#s3">3. Local Storage</a>
+            <a class="toc-link" href="#s4">4. Permissions</a>
+            <a class="toc-link" href="#s5">5. Third-Party</a>
+            <a class="toc-link" href="#s6">6. Children</a>
+            <a class="toc-link" href="#s7">7. Security</a>
+            <a class="toc-link" href="#s8">8. Your Rights</a>
+            <a class="toc-link" href="#s9">9. Retention</a>
+            <a class="toc-link" href="#s10">10. International</a>
+            <a class="toc-link" href="#s11">11. Google Play</a>
+            <a class="toc-link" href="#s12">12. Changes</a>
+            <a class="toc-link" href="#s13">13. Contact</a>
+            <a class="toc-link" href="#s14">14. Legal</a>
+            <a class="toc-link" href="#s15">15. External Links</a>
+        </div>
+    </nav>
+
+    <!-- ── Body ───────────────────────────────────────────────── -->
+    <main class="body-wrap">
+
+        <!-- Quick Reference -->
+        <h2 class="section-heading fade-in">
+            <span class="section-num">REF</span> Quick Reference Summary
+        </h2>
+        <div class="quick-ref fade-in" id="quick-ref"><!-- filled by JS --></div>
+
+        <!-- Section 1 -->
+        <h2 class="section-heading fade-in" id="s1">
+            <span class="section-num">01</span> Introduction and Scope
+        </h2>
+        <p class="body-text fade-in" id="s1-p1"><!-- JS --></p>
+        <p class="body-text fade-in">By downloading, installing, or using the App, you acknowledge
+            that you have read, understood, and agree to the terms of this Policy. If you do not
+            agree with this Policy, please do not use the App.</p>
+        <p class="body-text fade-in">This Policy is intended to comply with applicable privacy laws
+            and regulations, including but not limited to the General Data Protection Regulation
+            (GDPR), the California Consumer Privacy Act (CCPA), the Children's Online Privacy
+            Protection Act (COPPA), and Google Play Store Developer Program Policies.</p>
+
+        <!-- Section 2 -->
+        <h2 class="section-heading fade-in" id="s2">
+            <span class="section-num">02</span> Information We Do NOT Collect
+        </h2>
+        <p class="body-text fade-in">We are committed to your privacy. The App does not collect,
+            process, transmit, or store any of the following categories of information:</p>
+
+        <h3 class="sub-heading fade-in">2.1 &nbsp;Personal Identifiers</h3>
+        <ul class="check-list fade-in">
+            <li>Name, email address, phone number, or mailing address</li>
+            <li>User account credentials or login information</li>
+            <li>Government-issued identification numbers</li>
+            <li>IP address, device identifiers, or advertising IDs</li>
+            <li>Precise or approximate geographic location</li>
+        </ul>
+
+        <h3 class="sub-heading fade-in">2.2 &nbsp;Device and Technical Information</h3>
+        <ul class="check-list fade-in">
+            <li>Device hardware model or operating system version</li>
+            <li>Browser type or mobile network information</li>
+            <li>App crash reports or diagnostic data sent to us</li>
+            <li>System logs or usage statistics</li>
+        </ul>
+
+        <h3 class="sub-heading fade-in">2.3 &nbsp;Usage and Behavioral Data</h3>
+        <ul class="check-list fade-in">
+            <li>Number conversions you perform</li>
+            <li>History of calculations or inputs</li>
+            <li>Feature usage patterns or session duration</li>
+            <li>Clicks, taps, or navigation within the App</li>
+        </ul>
+
+        <h3 class="sub-heading fade-in">2.4 &nbsp;Financial and Commercial Data</h3>
+        <ul class="check-list fade-in">
+            <li>Payment card information</li>
+            <li>Purchase history (if in-app purchases are enabled, they are processed solely by
+                Google Play)
+            </li>
+            <li>Bank account or financial institution details</li>
+        </ul>
+
+        <div class="callout callout-blue fade-in">
+            <span class="callout-emoji">🔒</span>
+            <div class="callout-content">
+                <strong>Absolute Guarantee</strong>
+                <p>We do not operate any servers, databases, or cloud infrastructure that receives
+                    data from your device. The App runs entirely on your local device. All
+                    computations, conversions, and stored history exist only on your device and are
+                    never transmitted anywhere.</p>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <h2 class="section-heading fade-in" id="s3">
+            <span class="section-num">03</span> Local Storage on Your Device
+        </h2>
+        <p class="body-text fade-in">Certain features of the App store data locally on your device
+            to improve your experience. This local data never leaves your device and is not
+            accessible to us or any third party.</p>
+
+        <h3 class="sub-heading fade-in">3.1 &nbsp;Conversion History</h3>
+        <p class="body-text fade-in">The App saves a local log of your recent number conversions
+            using an on-device SQLite database (Android Room). This history is stored solely on your
+            device. You have full control:</p>
+        <ul class="bullet-list fade-in">
+            <li>View your conversion history in the History tab at any time</li>
+            <li>Delete individual records by swiping left on any history entry</li>
+            <li>Clear all history permanently via Settings → Clear History</li>
+            <li>Uninstalling the App permanently deletes all locally stored data</li>
+        </ul>
+
+        <h3 class="sub-heading fade-in">3.2 &nbsp;App Preferences</h3>
+        <p class="body-text fade-in">The App stores your preferences (theme selection, step-by-step
+            mode toggle) using Android DataStore on your local device. These preferences are
+            personal to your device and are never transmitted or shared.</p>
+
+        <h3 class="sub-heading fade-in">3.3 &nbsp;No Cloud Backup of Sensitive Data</h3>
+        <p class="body-text fade-in">The App's backup rules explicitly exclude the local database
+            from Android Auto Backup and Google Cloud backup. Your conversion history is not backed
+            up to any cloud service.</p>
+
+        <!-- Section 4 -->
+        <h2 class="section-heading fade-in" id="s4">
+            <span class="section-num">04</span> Permissions
+        </h2>
+        <p class="body-text fade-in">The App requests no special Android permissions. The table
+            below confirms what the App does and does not require:</p>
+        <table class="perm-table fade-in">
+            <thead>
+            <tr>
+                <th>Permission</th>
+                <th>Required?</th>
+                <th>Reason</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="perm-name">INTERNET</td>
+                <td class="perm-no">No</td>
+                <td>App is fully offline</td>
+            </tr>
+            <tr>
+                <td class="perm-name">CAMERA</td>
+                <td class="perm-no">No</td>
+                <td>No image capture features</td>
+            </tr>
+            <tr>
+                <td class="perm-name">LOCATION</td>
+                <td class="perm-no">No</td>
+                <td>No location-based features</td>
+            </tr>
+            <tr>
+                <td class="perm-name">CONTACTS</td>
+                <td class="perm-no">No</td>
+                <td>No contact access required</td>
+            </tr>
+            <tr>
+                <td class="perm-name">MICROPHONE</td>
+                <td class="perm-no">No</td>
+                <td>No audio features</td>
+            </tr>
+            <tr>
+                <td class="perm-name">READ/WRITE STORAGE</td>
+                <td class="perm-no">No</td>
+                <td>No file system access required</td>
+            </tr>
+            <tr>
+                <td class="perm-name">PHONE STATE</td>
+                <td class="perm-no">No</td>
+                <td>No phone or call features</td>
+            </tr>
+            <tr>
+                <td class="perm-name">NOTIFICATIONS</td>
+                <td class="perm-no">No</td>
+                <td>No push notifications sent</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Section 5 -->
+        <h2 class="section-heading fade-in" id="s5">
+            <span class="section-num">05</span> Third-Party Services and SDKs
+        </h2>
+        <p class="body-text fade-in">The App does not integrate any third-party services, SDKs, or
+            libraries that collect user data. Specifically:</p>
+        <ul class="bullet-list fade-in">
+            <li>No advertising networks or SDKs (Google AdMob, Meta Audience Network, etc.)</li>
+            <li>No analytics platforms (Firebase Analytics, Mixpanel, Amplitude, etc.)</li>
+            <li>No crash reporting services (Crashlytics, Sentry, Bugsnag, etc.)</li>
+            <li>No user authentication services (Firebase Auth, Auth0, etc.)</li>
+            <li>No social media integrations or login buttons</li>
+            <li>No payment processing SDKs beyond the native Google Play Billing Library</li>
+            <li>No A/B testing or feature flagging services</li>
+            <li>No customer support chat widgets</li>
+        </ul>
+
+        <div class="callout callout-blue fade-in">
+            <span class="callout-emoji">📵</span>
+            <div class="callout-content">
+                <strong>No Advertisements</strong>
+                <p>The App is completely ad-free. We do not display banner ads, interstitial ads,
+                    rewarded video ads, or any other form of advertisement. No advertising SDK is
+                    present in the App. No user data is shared with advertisers. This applies to all
+                    users regardless of subscription status.</p>
+            </div>
+        </div>
+
+        <!-- Section 6 -->
+        <h2 class="section-heading fade-in" id="s6">
+            <span class="section-num">06</span> Children's Privacy (COPPA Compliance)
+        </h2>
+        <p class="body-text fade-in">The App is suitable for users of all ages, including children
+            under the age of 13. Because we do not collect any personal information from any user,
+            the App is fully compliant with the Children's Online Privacy Protection Act (COPPA) and
+            similar laws globally.</p>
+        <p class="body-text fade-in">We do not knowingly collect, maintain, or use personal
+            information from children under 13 (or the applicable age of digital consent in the
+            user's jurisdiction). Since no data is collected from any user, there is no risk of
+            inadvertent data collection from minors.</p>
+        <p class="body-text fade-in">Parents and guardians may allow children to use this App with
+            full confidence that no personal data will be collected, stored, or transmitted.</p>
+
+        <!-- Section 7 -->
+        <h2 class="section-heading fade-in" id="s7">
+            <span class="section-num">07</span> Data Security
+        </h2>
+        <p class="body-text fade-in">The security of your information is important to us. While the
+            App does not transmit any personal data, we have implemented the following security
+            measures for locally stored data:</p>
+        <ul class="bullet-list fade-in">
+            <li>Local database encryption via Android's built-in storage security</li>
+            <li>No network endpoints or APIs that could be exploited to exfiltrate data</li>
+            <li>Adherence to Android security best practices in code implementation</li>
+            <li>No root or superuser access requested or required</li>
+            <li>ProGuard/R8 code obfuscation applied to release builds</li>
+            <li>Local storage scoped to the App's private data directory</li>
+        </ul>
+        <p class="body-text fade-in">Since no personal data is transmitted over the internet, the
+            risk of a data breach affecting your personal information through this App is
+            effectively zero. All locally stored data (conversion history, preferences) can be
+            deleted by you at any time or upon uninstalling the App.</p>
+
+        <!-- Section 8 -->
+        <h2 class="section-heading fade-in" id="s8">
+            <span class="section-num">08</span> Your Rights and Controls
+        </h2>
+        <p class="body-text fade-in">Although we do not collect personal data, we respect and
+            support the following user rights in accordance with applicable privacy regulations
+            (GDPR, CCPA, and others):</p>
+
+        <h3 class="sub-heading fade-in">8.1 &nbsp;Right of Access</h3>
+        <p class="body-text fade-in">You have the right to know what data is stored on your device
+            by the App. You can view your conversion history directly in the History screen of the
+            App.</p>
+
+        <h3 class="sub-heading fade-in">8.2 &nbsp;Right to Deletion</h3>
+        <p class="body-text fade-in">You may delete all locally stored App data at any time by:</p>
+        <ul class="bullet-list fade-in">
+            <li>Going to Settings → Clear History within the App</li>
+            <li id="s8-del2"><!-- JS --></li>
+            <li>Uninstalling the App, which permanently removes all associated local data</li>
+        </ul>
+
+        <h3 class="sub-heading fade-in">8.3 &nbsp;Right to Data Portability</h3>
+        <p class="body-text fade-in">Since no data is transmitted to our servers, there is no remote
+            data to export. All locally stored data is accessible via the App interface.</p>
+
+        <h3 class="sub-heading fade-in">8.4 &nbsp;Right to Object / Opt-Out</h3>
+        <p class="body-text fade-in">Since we do not engage in any data processing, profiling, or
+            targeted advertising, there is nothing to opt out of. The App has no tracking to
+            disable.</p>
+
+        <h3 class="sub-heading fade-in">8.5 &nbsp;CCPA Rights for California Residents</h3>
+        <p class="body-text fade-in" id="s8-ccpa"><!-- JS --></p>
+
+        <!-- Section 9 -->
+        <h2 class="section-heading fade-in" id="s9">
+            <span class="section-num">09</span> Data Retention
+        </h2>
+        <p class="body-text fade-in">Since we do not collect personal data on our servers, there is
+            no server-side data retention policy applicable. With respect to locally stored
+            data:</p>
+        <ul class="bullet-list fade-in">
+            <li>Conversion history is retained on your device until you delete it or uninstall the
+                App
+            </li>
+            <li>App preferences are retained until you change them or clear the App's data</li>
+            <li>No data survives an App uninstall; Android's data isolation guarantees this</li>
+            <li>We do not retain any backups of your data, as none is ever transmitted to us</li>
+        </ul>
+
+        <!-- Section 10 -->
+        <h2 class="section-heading fade-in" id="s10">
+            <span class="section-num">10</span> International Users
+        </h2>
+        <p class="body-text fade-in">The App is available globally through the Google Play Store.</p>
+   <!--         Because no personal data is collected or transferred, there are no cross-border data
+            transfer concerns. The App complies with privacy requirements in all jurisdictions where
+            it is available, including:</p>
+        <ul class="bullet-list fade-in">
+            <li>European Union (GDPR — General Data Protection Regulation)</li>
+            <li>United Kingdom (UK GDPR)</li>
+            <li>California, USA (CCPA — California Consumer Privacy Act)</li>
+            <li>Brazil (LGPD — Lei Geral de Proteção de Dados)</li>
+            <li>Canada (PIPEDA — Personal Information Protection and Electronic Documents Act)</li>
+            <li>Australia (Privacy Act 1988)</li>
+            <li>India (DPDP Act — Digital Personal Data Protection Act, 2023)</li>
+        </ul>-->
+
+        <!-- Section 11 -->
+        <h2 class="section-heading fade-in" id="s11">
+            <span class="section-num">11</span> Google Play Store
+        </h2>
+        <p class="body-text fade-in">The App is distributed via the Google Play Store, which is
+            operated by Google LLC. When you download or purchase the App, Google may collect
+            certain information as part of the transaction and platform operation. This is governed
+            by Google's own Privacy Policy at <a href="https://policies.google.com/privacy"
+                                                 target="_blank" rel="noopener"
+                                                 style="color:var(--teal);font-weight:500;">https://policies.google.com/privacy</a>.
+        </p>
+        <p class="body-text fade-in">We have no control over and assume no responsibility for the
+            privacy practices of Google Play. In-app purchase transactions, if any, are processed
+            entirely by Google Play Billing; we do not receive or store your payment
+            information.</p>
+
+        <!-- Section 12 -->
+        <h2 class="section-heading fade-in" id="s12">
+            <span class="section-num">12</span> Changes to This Privacy Policy
+        </h2>
+        <p class="body-text fade-in">We may update this Privacy Policy from time to time to reflect
+            changes in our practices, technology, legal requirements, or for other operational
+            reasons. When we make changes, we will:</p>
+        <ul class="bullet-list fade-in">
+            <li>Update the "Effective Date" at the top of this Policy</li>
+            <li>Publish the updated Policy at the URL linked in the App's Play Store listing</li>
+            <li>For material changes, provide notice within the App if technically feasible</li>
+        </ul>
+        <p class="body-text fade-in">Your continued use of the App after a Policy update constitutes
+            your acceptance of the revised Policy. If you do not agree with any changes, you should
+            discontinue use of the App.</p>
+        <p class="body-text fade-in">We encourage you to review this Policy periodically. The most
+            current version will always be accessible via the Privacy Policy link on our Google Play
+            Store listing page.</p>
+
+        <!-- Section 13 -->
+        <h2 class="section-heading fade-in" id="s13">
+            <span class="section-num">13</span> Contact Information
+        </h2>
+        <p class="body-text fade-in">If you have any questions, concerns, or requests regarding this
+            Privacy Policy or the App's privacy practices, please contact us:</p>
+        <div class="contact-box fade-in" id="contact-box"><!-- JS --></div>
+
+        <!-- Section 14 -->
+        <h2 class="section-heading fade-in" id="s14">
+            <span class="section-num">14</span> Legal Basis and Governing Law
+        </h2>
+        <p class="body-text fade-in">This Policy and any disputes relating to it are governed by
+            applicable law in the developer's jurisdiction. Because we do not process personal data,
+            formal legal bases for processing under GDPR (Article 6) are not applicable. However, to
+            the extent any data processing occurs, we rely on:</p>
+        <ul class="bullet-list fade-in">
+            <li>Legitimate interests — providing and improving the App's functionality</li>
+            <li>Consent — for any optional features where data is stored locally</li>
+            <li>Legal obligation — compliance with applicable laws and regulations</li>
+        </ul>
+
+        <!-- Section 14 -->
+        <h2 class="section-heading fade-in" id="s15">
+            <span class="section-num">15</span> External Links
+        </h2>
+        <p class="body-text fade-in">This Privacy Policy may contain links to external websites for
+            reference purposes
+            (such as Google Play policies or legal documents). These websites are not operated
+            by us. If you click on a third-party link, you will be directed to that site.
+        </p>
+        <p class="body-text fade-in">We strongly advise you to review the Privacy Policy of these
+            websites.
+            We have no control over and assume no responsibility for the content,
+            privacy policies, or practices of any third-party websites or services.
+        </p>
+
+    </main><!-- /body-wrap -->
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer class="footer" id="footer"><!-- JS --></footer>
+
+</div><!-- /page -->
+
+<script>
+    /* ─── Inject dynamic content from APP config ────────────────── */
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Hero
+      document.getElementById('hero-title').textContent = 'Privacy Policy';
+      document.getElementById('hero-app').textContent   = APP.name;
+      document.getElementById('hero-meta').innerHTML    =
+        `<span class="badge badge-gold">v${APP.version}</span>` +
+        `<span class="badge badge-teal">Effective: ${APP.effectiveDate}</span>` +
+        `<span class="badge badge-ghost">No Data Collected</span>` +
+        `<span class="badge badge-ghost">No Ads</span>` +
+        `<span class="badge badge-ghost">Fully Offline</span>`;
+
+      // Commitment banner
+      document.getElementById('commitment-body').textContent =
+        `${APP.name} is designed with privacy as a foundational principle. We do not collect, store, ` +
+        `transmit, or share any personal information. The app operates entirely offline on your device. ` +
+        `Your data stays with you — always.`;
+
+      // Quick reference table
+      const refs = [
+        ['App Name',         APP.name],
+        ['Developer',        APP.devName],
+        ['Contact',          APP.email],
+        ['Last Updated',     APP.effectiveDate],
+        ['Applies To',       `Android app on Google Play Store`],
+        ['Data Collected',   '<span class="tag-none">None — zero personal data collected</span>'],
+        ['Ads Displayed',    '<span class="tag-none">None — completely ad-free</span>'],
+        ['Third-Party SDKs', '<span class="tag-none">None — no analytics or tracking SDKs</span>'],
+        ['Internet Access',  '<span class="tag-none">Not required — fully offline</span>'],
+        ['Permissions',      '<span class="tag-none">None — no special permissions</span>'],
+      ];
+      document.getElementById('quick-ref').innerHTML = refs.map(([l, v]) =>
+        `<div class="quick-ref-row">
+           <div class="quick-ref-label">${l}</div>
+           <div class="quick-ref-value">${v}</div>
+         </div>`
+      ).join('');
+
+      // Section 1 opener
+      document.getElementById('s1-p1').textContent =
+        `This Privacy Policy ("Policy") describes the information practices of the ${APP.name} ` +
+        `application ("App", "we", "us", or "our"). This Policy applies to all users of the App ` +
+        `available on the Google Play Store and governs any interaction you have with the App.`;
+
+      // Section 8 deletion bullet
+      document.getElementById('s8-del2').textContent =
+        `Using Android Settings → Apps → ${APP.name} → Clear Data`;
+
+      // Section 8 CCPA
+      document.getElementById('s8-ccpa').textContent =
+        `California residents have rights under the CCPA. We do not sell personal information. ` +
+        `We do not share personal information for cross-context behavioral advertising. We do not ` +
+        `have actual knowledge of selling or sharing personal information of consumers under 16 years ` +
+        `of age. To exercise your rights, contact us at ${APP.email}.`;
+
+      // Contact box
+      document.getElementById('contact-box').innerHTML =
+        `<h4>Developer / Contact</h4>
+         <div class="contact-row">
+           <span class="contact-icon">📧</span>
+           <span class="contact-label">Email</span>
+           <span class="contact-val"><a href="mailto:${APP.email}">${APP.email}</a></span>
+         </div>
+         <div class="contact-row">
+           <span class="contact-icon">🌐</span>
+           <span class="contact-label">Website</span>
+           <span class="contact-val"><a href="${APP.website}" target="_blank" rel="noopener">${APP.website}</a></span>
+         </div>
+         <div class="contact-row">
+           <span class="contact-icon">🏢</span>
+           <span class="contact-label">Developer</span>
+           <span class="contact-val">${APP.devName}</span>
+         </div>
+         <div class="contact-row">
+           <span class="contact-icon">⏰</span>
+           <span class="contact-label">Response Time</span>
+           <span class="contact-val">Within ${APP.responseTime}</span>
+         </div>`;
+
+      // Footer
+      document.getElementById('footer').innerHTML =
+        `<span class="footer-copy">© ${APP.copyright} ${APP.devName}. All rights reserved.</span>
+         <div class="footer-tags">
+           <span class="footer-tag">NO DATA</span>
+           <span class="footer-tag">NO ADS</span>
+           <span class="footer-tag">OFFLINE</span>
+           <span class="footer-tag">v${APP.version}</span>
+         </div>`;
+
+      /* ── Scroll-triggered fade-in ───────────────────────────── */
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
+</script>
+</body>
+</html>
